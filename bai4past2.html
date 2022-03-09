@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Tính Chu vi hình tròn</h3>
+<input type="number" placeholder="Nhập đường kính hình tròn" id="b1"> *
+<input type="number" placeholder="Nhập số Pi" id="b2">
+<br>
+<br>
+<button onclick="operator()">Kết quả</button>
+<p id="kq">Kết quả</p>
+// Số Pi = 3,14
+// Công thức tính chu vi hình tròn = Đường kính * số Pi
+<script>
+    let b1 = document.getElementById('b1')
+    let b2 = document.getElementById('b2')
+    function operator() {
+        let abc = (b1.value * b2.value);
+        document.getElementById('kq').innerHTML = abc;
+    }
+</script>
+</body>
+</html>

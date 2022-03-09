@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3 style="color: darkred">Tính điểm trung bình 3 môn :</h3>
+<input type="number" placeholder="Nhập điểm vào đây" id="a1">
+<br>
+<input type="number" placeholder="Nhập điểm vào đây" id="a2">
+<br>
+<input type="number" placeholder="Nhập điểm vào đây" id="a3">
+<br>
+<button onclick="operator()">=</button>
+<p id="kq">Kết quả :</p>
+<script>
+    let a1 = document.getElementById('a1')
+    let a2 = document.getElementById('a2')
+    let a3 = document.getElementById('a3')
+    function operator() {
+        let abc = (parseInt(a1.value) + parseInt(a2.value) + parseInt(a3.value)) /3
+        document.getElementById('kq').innerHTML= abc
+    }
+</script>
+</body>
+</html>
